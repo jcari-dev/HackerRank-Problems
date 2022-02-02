@@ -7,4 +7,3 @@ The STATION table is described as follows:
 SELECT * 
 FROM city 
 WHERE population > 100000 AND CountryCode = 'USA';
-~~~
