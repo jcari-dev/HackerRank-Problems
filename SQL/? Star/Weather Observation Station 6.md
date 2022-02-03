@@ -1,8 +1,12 @@
-Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+
+Input Format
+
 The STATION table is described as follows:
+
 ![STATION](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
 
 ~~~~sql
 SELECT DISTINCT city
 FROM   station
-WHERE  id % 2 = 0; 
+WHERE  city REGEXP '^[aeiou]';
